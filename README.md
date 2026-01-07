@@ -114,6 +114,10 @@ BNB_PRIVATE_KEY=your_bnb_chain_private_key_here
 - **Solana**: Use public RPC endpoints or Helius, QuickNode
 - **BNB Chain**: Use Binance public RPC or QuickNode
 
-## Support
+## 🤝 Support & Community
 
-For issues, questions, or contributions, please open an issue on the repository or 📞 [soulcrancerdev](https://t.me/soulcrancerdev).
+For mvp version, fork, star, and contribute to the project:
+- [Polymarket Copy Trading Bot](https://github.com/soulcrancerdev/polymarket-copy-trading-bot)
+
+For questions, issues, or collaboration, reach out:
+- Telegram: [soulcrancerdev](https://t.me/soulcrancerdev)

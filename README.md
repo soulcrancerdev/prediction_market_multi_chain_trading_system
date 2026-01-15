@@ -8,6 +8,20 @@ For questions, issues, collaboration, or custom development:
 - Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev)
 - GitHub: [Polymarket Copy Trading Bot Repository](https://github.com/soulcrancerdev/polymarket-copy-trading-bot)
 
+## How It Works
+https://www.youtube.com/watch?v=6ZRIIPzv3d8
+
+- buy:
+https://polygonscan.com/tx/0x04578bb1d11cd4d76ee5cbe60e8ffc1ac6d19e314c9205c31d7048af262125d7
+- copy:
+https://polygonscan.com/tx/0x7f3552f2da30d362c68afe885b8c7a64e38a19e59b5872b402508862f5f96b84
+
+---
+## Trial Versions
+
+### **Polymarket Copy Trading Bot - Rust (Demo)**  
+> 🗂️ Comin' soon..
+
 ## Features
 
 - **Polymarket Focus**: Trade exclusively on Polymarket via Polygon blockchain.

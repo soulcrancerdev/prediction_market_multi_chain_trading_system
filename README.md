@@ -1,19 +1,18 @@
-# Polymarket/Kalshi Copy Trading Bot & Polymarket Arbitrage Bot
+# Polymarket/Kalshi - Copy Trading & Arbitrage Bot (Python & Rust)
 
-A Python bot for automated copy trading on Polymarket (on Polygon blockchain). This tool allows you to mirror trades from successful traders, implementing popular strategies discussed on X (formerly Twitter). Focus on high-edge traders, customizable parameters, and risk management to maximize profits.
+A powerful dual-implementation bot for automated copy trading and arbitrage on Polymarket (Polygon blockchain). Choose between a flexible Python version or an ultra-fast Rust version for optimized performance.
 
-## Contact Information
+## Contact & Support
 
-For questions, issues, collaboration, or custom development:
 - Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev)
-- GitHub: [Polymarket Copy Trading Bot Repository](https://github.com/soulcrancerdev/polymarket-copy-trading-bot)
+- X: [@soulcrancerdev](https://x.com/soulcrancerdev)
 
 ## How It Works
-https://www.youtube.com/watch?v=6ZRIIPzv3d8
+Watch demo: https://www.youtube.com/watch?v=6ZRIIPzv3d8
 
-- buy:
+- buy example:
 https://polygonscan.com/tx/0x04578bb1d11cd4d76ee5cbe60e8ffc1ac6d19e314c9205c31d7048af262125d7
-- copy:
+- copy example:
 https://polygonscan.com/tx/0x7f3552f2da30d362c68afe885b8c7a64e38a19e59b5872b402508862f5f96b84
 
 ---
@@ -33,18 +32,39 @@ https://polygonscan.com/tx/0x7f3552f2da30d362c68afe885b8c7a64e38a19e59b5872b4025
    ```
 3. Run `polymarket_copytrading_bot_demo.exe`
 
-## Features
+### Compact Features Summary
 
-- **Polymarket Focus**: Trade exclusively on Polymarket via Polygon blockchain.
-- **Copy Trading Automation**: Mirror trades from selected wallets with proportional sizing, filters, and custom rules.
-- **Customizable Strategies**: Implement popular X-discussed tactics like portfolio of traders, sentiment bot copying, mean reversion, and undervaluation plays.
-- **Core Functionality**:
-  - Fetch trader wallets and market data.
-  - Monitor orderbooks, prices, and trader activity.
-  - Automate entries/exits with size multipliers, retries, and market skips.
-  - Balance checking and position monitoring.
-  - Dashboard for stats: fill rates, PNL tracking, slippage analysis.
-- **Risk Management**: Set min/max trade sizes, % portfolio allocation, liquid market filters (e.g., min $1M volume).
+- **Polymarket Trading**: Real-time blockchain monitoring and automated trading on Polymarket via Polygon.
+- **Copy Trading**: Mirror whale trades with configurable sizing, filters, and tiered strategies.
+- **Order & Risk Management**: Advanced order types, retries, buffers, and circuit breakers to ensure safe trading.
+- **Market-Specific**: Support for ATP Tennis and Ligue 1 Soccer markets with caching and live status detection.
+- **Performance & Reliability**: Low-latency Rust implementation with reconnections and error handling.
+- **Configuration & Logging**: Environment setup, validation tools, CSV logs, and detailed status reporting.
+
+### Copy Trading Strategy (Current Version)
+
+- **Main idea:** Automatically copy big traders at about 2% size, with safety checks to avoid risks.  
+- **How:** Detect whale trades in real-time, decide how much to copy based on trade size, and place quick orders.  
+- **Adjustments:** Adds small buffers to prices for better fills, especially in volatile markets like tennis and soccer.  
+- **Retries:** If orders don’t fill, try again a few times, sometimes slightly increasing the price for large trades.  
+- **Safety:** Stops trading if the market is illiquid or too risky, blocking trades for a few hours.  
+- **Logs:** Keeps track of all trades for review.
+---
+
+## 🚀 VPS Recommendation – Low-Latency Execution
+
+**Latency = edge** in Polymarket.
+
+**Trading VPS** is the go-to low-latency hosting solution among serious prediction-market and crypto bot runners.
+
+- Sub-10 ms to major Polygon nodes  
+- Crypto/HFT-optimized locations  
+- Exceptional uptime & network performance  
+
+**[Trading VPS →](https://app.tradingvps.io/aff.php?aff=60)**
+
+Most users see noticeably better fills and lower slippage after switching.
+---
 
 ## Popular Copy Trading Strategies
 
@@ -89,24 +109,10 @@ Based on trending discussions on X in 2025-2026, here are key strategies for suc
 
 ### Getting RPC URLs
 
-- **Polygon**: Use Polygon RPC endpoints or Alchemy.
-
-## 🚀 VPS Recommendation – Low-Latency Execution
-
-**Latency = edge** in Polymarket.
-
-**Trading VPS** is the go-to low-latency hosting solution among serious prediction-market and crypto bot runners.
-
-- Sub-10 ms to major Polygon nodes  
-- Crypto/HFT-optimized locations  
-- Exceptional uptime & network performance  
-
-**[Trading VPS →](https://app.tradingvps.io/aff.php?aff=60)**
-
-Most users see noticeably better fills and lower slippage after switching.
+- **Polygon**: Use Polygon RPC endpoints or Alchemy. Contact me for a free RPC URLs.
 
 ## 🤝 Support & Community
 
-Fork, star, and contribute to the project on GitHub: [Polymarket Copy Trading Bot](https://github.com/soulcrancerdev/polymarket-copy-trading-bot)
+Fork, star, and contribute to the project on GitHub.
 
 Reach out via Telegram: [@soulcrancerdev](https://t.me/soulcrancerdev)

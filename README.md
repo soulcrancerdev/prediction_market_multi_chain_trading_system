@@ -51,7 +51,7 @@ https://polygonscan.com/tx/0x7f3552f2da30d362c68afe885b8c7a64e38a19e59b5872b4025
 - **Logs:** Keeps track of all trades for review.
 ---
 
-## 🚀 VPS Recommendation – Low-Latency Execution
+## 🚀 VPS Recommendation – Low-Latency Execution & GEO restrictions support
 
 **Latency = edge** in Polymarket.
 
@@ -60,6 +60,8 @@ https://polygonscan.com/tx/0x7f3552f2da30d362c68afe885b8c7a64e38a19e59b5872b4025
 - Sub-10 ms to major Polygon nodes  
 - Crypto/HFT-optimized locations  
 - Exceptional uptime & network performance  
+
+Note: Polymarket has some GEO restrictions, so many Polymarket traders are using our AMS VPS and love it.  
 
 **[Trading VPS →](https://app.tradingvps.io/aff.php?aff=60)**
 
